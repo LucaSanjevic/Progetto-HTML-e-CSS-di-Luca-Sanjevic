@@ -5,11 +5,14 @@
 .navbar {
     overflow: hidden;
     padding-top: 10px;
-    width: 90%;
+    top: 0;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    position: sticky;
+    background-color: white;
   }
-  
+ 
   .navbar a {
     float: right;
     color: gray;
@@ -17,6 +20,7 @@
     text-decoration: none;
     margin-top: 1%;
   }
+ 
   
   .navbar a:hover {
     border-top: 3px solid rgb(167, 218, 238);
@@ -27,6 +31,10 @@
     float: left;
   }
 
+  #myLinks {
+    display: none;
+  }
+
   .navbar .margini2 a {
     padding-top: 2%;
   }
@@ -35,6 +43,7 @@
     background-color: rgb(167, 218, 238);
     height:  500px;
     position: relative;
+    z-index:-1;
     text-align: center;
   }
 
@@ -47,6 +56,10 @@
   transform: translate(-50%, -50%);
   padding: 10px;
   font-size: xx-large;
+}
+
+.navbar a#icon {
+  font-size:35px
 }
 
 
@@ -85,20 +98,37 @@ img {
   width: 100%;
   background-color: #3d98e3;
 }
+.footer2 {
+  display: block; 
+margin-left: auto;
+margin-right: auto;
+width: fit-content;
+padding: 1%;
+text-decoration: none;
+}
 
+.logo_linkedin {
+  width:20;
+  height:20;
+}
+
+.logo_sito {
+  width:70;
+  height:70;
+}
 
 
 /*-------------------------*/
 
 .centro_contatti {
-  height: 70%;
+  max-height: 70%;
   width: 100%;
   display: flex;
 }
 
 .touch {
   width: 30%;
-  height: 100%;
+  max-height: 100%;
   display: flex;
   align-items: center;
   text-align: center;
@@ -109,11 +139,13 @@ img {
 
 .formato {
   width: 67%;
-  height: 100%;
+  max-height: 90%;
   display: flex;
   align-items: center;
   text-align: center;
   justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 input {
@@ -144,7 +176,7 @@ input {
 
 .centro2_bio {
   display: flex;
-  height: 60vh;
+  border: 1px solid black;
 }
 
 
@@ -158,6 +190,7 @@ input {
   display: flex;
   align-items: center;
   justify-content: center;
+  max-height: fit-content;
 }
 
 .something div {
@@ -168,12 +201,28 @@ input {
   width: 50%;
   float: right;
   display: flex;
-  align-items: center;
   justify-content: center;
+  max-height: fit-content;
 }
 
 .hobbies div{
-  width: 60%;
+  text-align: center;
+  width: 50%;
+  font-size: 20px;
+  line-height: 4vh;
+}
+
+.cv {
+  width: 50%;
+  max-height: fit-content;
+  float: right;
+  display: flex;
+  justify-content: center;
+}
+
+.cv div{
+  text-align: center;
+  width: 50%;
   font-size: 20px;
   line-height: 4vh;
 }

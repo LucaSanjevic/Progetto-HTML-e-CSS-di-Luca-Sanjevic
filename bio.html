@@ -1,19 +1,22 @@
 <html>
     <head>
         <title>Bio</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/Assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <body>
            
          <!-- navbar-->
             
          <div class="navbar">
+          <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+            <i class=" fa-solid fa fa-bars"></i>
+          </a>
 
-          <div class="margini2">
+          <div class="margini2"  id="myLinks">
           <a href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
-              <img src="linkedin.png" 
-              width="20" 
-              height="20"
-              alt="Logo LinkedIn">
+              <img src="/Assets/linkedin.png" 
+              alt="Logo LinkedIn"
+              class="logo_linkedin">
             </a>
             <a href="bio.html">Chi sono</a>
             <a href="contacts.html">Contatti</a>
@@ -22,10 +25,9 @@
 
           <div class="margini">
           <a href="index.html">
-            <img src="logo.png" 
-            width="70" 
-            height="70"
-            alt="Logo sito">
+            <img src="/Assets/logo.png" 
+            alt="Logo sito"
+            class="logo_sito">
           </a>
         </div>
 
@@ -49,7 +51,7 @@ I wanna being a part of this world and improve it.
 
 Improving the UX design means improve the quality of life of all people behind a black screen.
 <br><br>
-<a href="Cv.pdf" class="button">
+<a href="./Assets/Cv.pdf" class="button">
   <button>
     <b>Click here to view my CV</b> 
 </button>
@@ -59,6 +61,27 @@ Improving the UX design means improve the quality of life of all people behind a
 </div>
 </div>
 
+<!-- CV -->
+<div class="centro2_bio">
+  <div class="something">
+    <div>
+    Curriculum Vitae
+    </div>
+  </div>
+  <div class="cv">
+    <div>
+  <h3>Education</h3> 
+  <b>Boolean Career</b>: 2021 six months full course on front-end (javascript e vue) and back-end (java) tech.<br>
+  <b>Google Ux Design</b>: 2022 UX/UI where i did UX Research, Wireframes and Prototypes in Figma and Adobe XD. <br>
+
+  <h3>Work experiences</h3> 
+  <b>Java Developer</b>: 2022-2023 working in teams, agile method, on Java Spring technology.<br>
+
+</div>
+  </div>
+  </div>
+
+  <br>
 
 <!-- centro2 -->
 <div class="centro2_bio">
@@ -70,7 +93,7 @@ Improving the UX design means improve the quality of life of all people behind a
 <div class="hobbies">
   <div>
 <h3>My hobbies</h3> 
-<b>Movies</b>: I love watching movies, my favorite directors are David Lynch, Woody Allen, Krystof Kieslowski and many others <br>
+<b>Movies</b>: I love watching movies, my favorite directors are David Lynch, Woody Allen, Krystof Kieslowski and many others.<br>
 
 <b>Videogame</b>: I did competitive tournament and i like programming games with tools like RPG-maker. <br>
 
@@ -81,23 +104,18 @@ Improving the UX design means improve the quality of life of all people behind a
 </div>
 </div>
 
+<br>
 
+<!-- footer -->
 <div class="footer">
 
-  <a style="display: block; margin-left: auto;
-  margin-right: auto;
-  padding: 1%;
-  width: fit-content;
-  text-decoration: none;" href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
+  <a class="footer2" 
+  href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
       luca-sanjevic@hotmail.it
     </a>
 
-<a style="display: block; margin-left: auto;
-margin-right: auto;
-width: fit-content;
-padding: 1%;
-" href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
-  <img src="linkedin.png" 
+<a class="footer2" href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
+  <img src="/Assets/linkedin.png" 
   width="30" 
   height="30"
   alt="Logo LinkedIn">
@@ -105,14 +123,10 @@ padding: 1%;
 
 <br>
 
-<p style="display: block; 
-margin-left: auto;
-margin-right: auto;
-width: fit-content;
-padding: 1%;
-">@2023 by Luca</p>
+<p class="footer2">@2023 by Luca</p>
 </div>
 
+<script type="text/javascript" src="myscript.js"></script>
         </body>
     </head>
 </html>

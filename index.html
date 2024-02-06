@@ -1,19 +1,28 @@
 <html>
+  <link rel="icon" type="image/x-icon" href="/Assets/logo.png">
     <head>
         <title>home</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="/Assets/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <meta property="og:title" content="Open Graph Meta Tags: Everything You Need to Know" />
+        <meta property="og:image" content="/Assets/logo.png" />
+
+
+      </head>
         <body>
 
             <!-- navbar-->
             
            <div class="navbar">
+            <a href="javascript:void(0);" id="icon" onclick="myFunction()">
+              <i class=" fa-solid fa fa-bars"></i>
+            </a>
 
-            <div class="margini2">
+            <div class="margini2" id="myLinks">
             <a href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
-                <img src="linkedin.png" 
-                width="20" 
-                height="20"
-                alt="Logo LinkedIn">
+                <img src="/Assets/linkedin.png" 
+                alt="Logo LinkedIn"
+                class="logo_linkedin">
               </a>
               <a href="bio.html">Chi sono</a>
               <a href="contacts.html">Contatti</a>
@@ -22,10 +31,9 @@
 
             <div class="margini">
             <a href="index.html">
-              <img src="logo.png" 
-              width="70" 
-              height="70"
-              alt="Logo sito">
+              <img src="/Assets/logo.png" 
+              alt="Logo sito"
+              class="logo_sito">
             </a>
           </div>
 
@@ -46,14 +54,14 @@
 
           <!-- progetti -->
           <div class="progetti">
-          <h1>My projects</h1>
+          <h2>My projects</h2>
 
           <div class="progettino">
-            <img src="foto1.webp" alt="">
+            <img src="/Assets/foto1.webp" alt="Foto di un proiettore">
             <div class="paragrafo">
             <p>App allowing the user to reserve a seat in a theater of his/her choice</p>
             <h4>MovieWorld</h4>
-            <a href="progetto1.pdf" class="button">
+            <a href="/Assets/progetto1.pdf" class="button">
               <button>
                  Read More
             </button></a>
@@ -61,11 +69,11 @@
           </div>
 
           <div class="progettino">
-            <img src="foto2.webp" alt="">
+            <img src="/Assets/foto2.webp" alt="Foto di sushi">
             <div class="paragrafo">
             <p>App allowing the user to order sushi from a nearby restaurant</p>
-            <h4>AsianFusion Sushi</h4>
-            <a href="progetto2.pdf" class="button">
+            <h4>AsianFusion</h4>
+            <a href="/Assets/progetto2.pdf" class="button">
               <button>
                  Read More
             </button></a>
@@ -73,11 +81,11 @@
           </div>
 
           <div class="progettino">
-            <img src="foto3.webp" alt="">
+            <img src="/Assets/foto3.webp" alt="Foto di un codice">
             <div class="paragrafo">
             <p>App to educate student or young workers to learn new web technologies.</p>
             <h4>Code your future</h4>
-          <a href="progetto3.pdf" class="button">
+          <a href="/Assets/progetto3.pdf" class="button">
             <button>
                Read More
           </button>
@@ -88,13 +96,7 @@
 
 
 
-
-
-
-
-
-
-
+<br>
 
 
 
@@ -102,20 +104,13 @@
           <!-- footer -->
           <div class="footer">
 
-            <a style="display: block; margin-left: auto;
-            margin-right: auto;
-            padding: 1%;
-            width: fit-content;
-            text-decoration: none;" href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
+            <a class="footer2" 
+            href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
                 luca-sanjevic@hotmail.it
               </a>
 
-          <a style="display: block; margin-left: auto;
-          margin-right: auto;
-          width: fit-content;
-          padding: 1%;
-          " href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
-            <img src="linkedin.png" 
+          <a class="footer2" href="https://www.linkedin.com/in/luca-sanjevic799?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BmpEjs9JWQKqjah%2FOzK%2FdZA%3D%3D">
+            <img src="/Assets/linkedin.png" 
             width="30" 
             height="30"
             alt="Logo LinkedIn">
@@ -123,14 +118,9 @@
 
           <br>
 
-          <p style="display: block; 
-          margin-left: auto;
-    margin-right: auto;
-    width: fit-content;
-    padding: 1%;
-    ">@2023 by Luca</p>
+          <p class="footer2">@2023 by Luca</p>
         </div>
 
+        <script type="text/javascript" src="myscript.js"></script>
         </body>
-    </head>
 </html>
